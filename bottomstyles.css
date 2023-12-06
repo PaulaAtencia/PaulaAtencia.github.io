@@ -1,0 +1,61 @@
+/* Estilo del cuadro inferior de todas las páginas */
+
+#numbers {
+    font-family: "Times New Roman";
+    color: white;
+    font-style: italic;
+}
+
+#divBottom {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+
+#itemsPos {
+    align-items: center;
+    text-align: center;
+}
+
+#bottomTable {
+    background: black;
+    width: 500;
+}
+
+/* Control y posición del SVG inferior */
+#svgPos {
+    position: fixed;
+    bottom: 5;
+    right: 5;
+    
+    
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+
+    animation-name: animSVG;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+#svgPos:hover {
+    opacity: 0.4;
+}
+
+/* Animación de movimiento del SVG */
+@keyframes animSVG {
+    from {
+        bottom: 0px;
+        transform: rotate(0deg);
+    }
+    to {
+        bottom: 500px;
+        transform: rotate(-360deg);
+    }
+}

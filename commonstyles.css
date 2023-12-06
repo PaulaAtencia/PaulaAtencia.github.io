@@ -1,0 +1,35 @@
+/* Aspectos que tienen el mismo estilo en todas las páginas */
+
+@font-face {
+    font-family: oldEnglish;
+    src: url("fonts/oldEnglish.ttf");
+}
+
+@font-face {
+    font-family: TimesNewRoman;
+    src: url("fonts/times\ new\ roman.ttf");
+}
+
+/* Textos comúnes */
+#basictext {
+    font-family: "TimesNewRoman";
+    color: white;
+}
+
+/* Títulos */
+#titletext {
+    font-family: oldEnglish;
+    color: white;
+    font-weight: bold;
+}
+
+/* Botón de vuelta al menú principal */
+#mainmenu_button {
+    background-color: crimson;
+    border-color: rgb(77, 7, 7);
+}
+
+#mainmenu_button:hover {
+    background-color: rgb(77, 7, 7);
+    border-color: rgb(77, 7, 7);
+}

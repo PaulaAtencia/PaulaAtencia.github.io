@@ -1,0 +1,142 @@
+/* Estilos de la página principal */
+
+
+
+
+
+
+
+/* HEADER */
+
+/* Posición del logo */
+.logoPos {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: logoAnim;
+    animation-duration: 1.5s;
+}
+
+/* Animación del logo */
+@keyframes logoAnim {
+    0% {
+        transform: scale(0.1);
+        scale: 0;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logoPos img {
+    max-width: 650;
+    max-height: 235;
+}
+
+/* Adaptación header */
+@media (max-width: 548px) {
+    .logoPos img {
+        width: 325px;
+        height: 117.5px;
+    }
+}
+
+
+/* BODY */
+
+body {
+    background-image: url("subpags/photos/fondocristal.jpg");
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Adaptación Body */
+@media (max-width: 1252px) {
+    body table {
+        width: 5;
+    }
+}
+
+
+/* Posición del texto */
+.textPos {
+    max-width: 800;
+    min-width: 500;
+    width: 100%;
+    height: 600;
+}
+
+.textStyle{
+    background: black;
+    border-style: solid;
+    border-width: 30px 35px 30px 35px;
+    border-radius: 100px;
+}
+
+
+/* Posición de la lista de Categorías */
+.catPos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, black, #444444);
+    text-align: left;
+    max-width: 400;
+    min-width: 200;
+    width: 100%;
+    height: 400;
+    border-style: solid;
+    border-width: 30px 35px 30px 35px;
+    border-radius: 100px;
+}
+
+/* Estilo de los elementos de la lista de categorías */
+#elemCatStyle {
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px black;
+    text-decoration: dotted;
+}
+
+#elemCatStyle:link {
+    color: red;
+}
+
+
+/* FOOTER */
+
+@media (max-width: 1252px) {
+    footer #separation {
+        height: 300;
+    }
+}
+
+/* Posición del mapa y tamaño */
+.mapPos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    max-height: 225;
+    height: 225;
+}
+
+/* EXTRAS */
+
+/* Tamaño de la separación con la parte del fondo */
+#separation {
+    height: 100;
+}
+
+/* Tamaño de la separación con el mapa y la info del fondo */
+#separation2 {
+    height: 10;
+}
