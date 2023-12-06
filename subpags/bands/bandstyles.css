@@ -1,0 +1,28 @@
+/* Estilos de las páginas del perfil de las bandas */
+
+body {
+    background-image: url("../photos/fondocristal.jpg");
+    height: 100%;
+}
+
+/* Diseño del video de YouTube */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    max-width: 1200;
+    max-height: 560;
+    background-color: black;
+}
+
+#separation {
+    height: 30;
+    background-color: black;
+}
+
+a:visited {
+    color: green;
+}

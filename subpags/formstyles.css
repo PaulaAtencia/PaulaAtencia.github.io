@@ -1,0 +1,71 @@
+/* Estilos de las páginas con las listas */
+
+body {
+    background: linear-gradient(to left, black, #444444);
+    height: 100%;
+}
+
+/* Adaptación Body */
+@media (max-width: 620px) {
+    #fontStyle {
+        font-size: 8;
+    }
+}
+
+/* Adaptación Body */
+@media (min-width: 620px) {
+    #fontStyle {
+        font-size: 16;
+    }
+}
+
+
+
+/* Bordes laterales */
+#all {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 75px;
+    border-color: #000000;
+}
+
+/* Textos de botones básicos */
+#basicbutton {
+    font-family: "Times New Roman";
+    color: black;
+}
+
+/* Estilo de las textareas */
+#textarea {
+    height: 10em; 
+    width: 40em; 
+    resize: none;
+    overflow: auto;
+}
+
+/* Estilo de las numberarea */
+#numberarea {
+    height: 1em; 
+    width: 3em; 
+    resize: none;
+    overflow: auto;
+}
+
+/* Tamaño de la separación con la parte del fondo */
+#separation {
+    height: 50;
+}
+
+/* Posición del botón de regreso al inicio */
+#mainButtonPos {
+    position: absolute;
+    left: 5;
+    top: 5;
+}
+
+.radioPos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
